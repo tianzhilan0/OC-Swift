@@ -7,6 +7,7 @@ Swift已推出数年，与Objective-C相比Swift的语言机制及使用简易�
 ####1. 桥接文件：项目名-Bridging-Header.h
 
 ![屏幕快照 2017-07-21 下午4.02.07.png](http://upload-images.jianshu.io/upload_images/1243891-773caa4ce5cecc44.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 Swift项目首次创建OC类时会提醒是否创建桥接文件，桥接文件的名是：项目名-Bridging-Header.h，这是Xcode会自己配置好桥接文件。如果
 桥接文件删除或更改项目名时，我们可以手动创建，只要配置好路径就可以了
 配置文件路径：Targets-->Build Settings-->Swift Compiler - General-->Objective-C Bridging Header
@@ -16,7 +17,9 @@ Swift项目首次创建OC类时会提醒是否创建桥接文件，桥接文件�
 ####2. 在桥接文件中添加需要调用的OC类，#import "LCHelper.h"
 
 ![屏幕快照 2017-07-21 下午4.06.17.png](http://upload-images.jianshu.io/upload_images/1243891-aecf265cc7125c60.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ####3. 在Swift文件中就可以正常调用OC的属性和方法
+
 ![屏幕快照 2017-07-21 下午4.06.30.png](http://upload-images.jianshu.io/upload_images/1243891-bee1bc8653c9126e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ##OC项目
@@ -39,6 +42,7 @@ OC项目首次创建Swift文件时会提醒是否创建桥接文件，桥接文�
 ![屏幕快照 2017-07-21 下午3.56.54.png](http://upload-images.jianshu.io/upload_images/1243891-4c3602115ec2b299.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 可以通过Command+进入文件，在文件的下面会有这样几行代码：
+
 ![屏幕快照 2017-07-21 下午3.56.11.png](http://upload-images.jianshu.io/upload_images/1243891-4e807194ae0a5c5c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 这样OC项目就可以调用Swift文件了
